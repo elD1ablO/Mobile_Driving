@@ -29,9 +29,9 @@ public class Car : MonoBehaviour
 #if UNITY_EDITOR
             EditorApplication.ExitPlaymode();
 #else
-            Application.Quit(); 
+            SceneManager.LoadScene(0); 
 #endif
-            //SceneManager.LoadScene(0);
+            
         }
     }
     public void Steer(int value)
